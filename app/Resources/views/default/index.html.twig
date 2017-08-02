@@ -1,5 +1,147 @@
-{% extends 'base.html.twig' %}
+{% extends 'baseMain.html.twig' %}
 
 {% block body %}
-  <img src = "{{ asset('images/pettaClogo@2x.png')}}"/>
+<style>
+@font-face {
+    font-family: 'bankgothic_lt_btlight';
+    src: url('{{ asset('fonts/bank_gothic_light_bt-webfont.woff2') }}' ) format('woff2'),
+         url('{{ asset('fonts/bank_gothic_light_bt-webfont.woff') }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.royalSlider {
+  width: 100%;
+  height: 400px;
+}
+.logoMain{
+	width:300px;
+}
+.socialIcons{
+{# 	margin:25px; #}
+}
+
+.container-fluid{
+	margin:0;
+	padding:0;
+}
+
+.siteHeader{
+	height:100px;
+}
+
+.header1Stripe{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:50px;
+	background-color:black;
+	color:white;
+	font-size:1.2em;
+}
+
+h2{
+	font-family:'bankgothic_lt_btlight';
+}
+
+
+
+
+</style>
+
+
+<div class = "header1Stripe">
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class = "pull-right socialIcons">
+					<span>905-555-9990</span>|
+					<span>dino@email.com</span>
+					<i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i>
+					<i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class = "container">
+	
+		
+	
+	
+	<div class = "row">
+		<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class = "siteHeader">
+				<img class = "img-responsive logoMain pull-left" src = "{{ asset('images/pettaClogoWithLine.png') }}"/>
+					
+				<ul class="nav nav-pills pull-right">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation"><a href="#">Gallery</a></li>
+					  <li role="presentation"><a href="#">Testimonials</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<div class = "container">
+	<div class="royalSlider rsDefault">
+	    <!-- simple image slide -->
+	    <img class="rsImg" src="{{asset('images/gallery/6.jpg')}}" alt="image desc" width="200" />
+	
+	    <!-- lazy loaded image slide -->
+	    <a class="rsImg" href="{{asset('images/gallery/6.jpg')}}">image desc</a>
+	
+	    <!-- HTML content slide -->
+	    <p>Content goes here</p>
+	
+	    <!-- image and content -->
+	    <div>
+	{#         <img class="rsImg" src="{{asset('images/gallery/6.jpg')}}" data-rsVideo="https://vimeo.com/44878206" /> #}
+	        <p>Some content after...</p>
+	    </div>
+	
+	    <!-- HTML content -->
+	    <div>
+	        Put any HTML content here
+	    </div>
+	
+	    <!-- HTML content (100% with and height) -->
+	    <div class="rsContent">
+	        Put any HTML content here
+	    </div>
+	</div>
+</div>
+
+
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-8">
+		
+			<h2>Title</h2>
+			<p>Welcome to Petta Construction, one of Hamilton's leading residential and commercial contractors.</p>
+
+			<p>For more than 25 years Petta Construction has been building, renovating and providing high quality custom contracting services in Hamilton, Ancaster, Stoney Creek and Dundas.</p>
+
+			<p>We specialize in Custom Home Renovations, Custom Home Additions, Custom Basement Renovations, and Custom Commercial Constructions.</p>
+
+			<p>Our extensive residential experience and diverse skills make Petta Construction an obvious choice, whether you are renovating your basement or adding on to your existing home.</p>
+
+			<p>If your needs involve Commercial or Light Industrial building construction or renovation, Petta Construction will complete your project with same attention to quality, fit and finish as our residential projects.</p>
+
+<p>Please click on either the Residential or Commercial link to the right to read more about our work, then give us a call or send us an email to arrange for your free, no obligation consultation.</p>
+		</div>
+		<div class = "col-md-4">
+			<h2>Galleries</h2>
+			<h2>Testimonials</h2>
+		</div>
+	</div>
+</div>
+
+  
+  
+
+
+
 {% endblock %}
