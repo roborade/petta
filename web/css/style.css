@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'bankgothic_lt_btlight';
+    src: url('../fonts/bank_gothic_light_bt-webfont.woff2' ) format('woff2'),
+         url('../fonts/bank_gothic_light_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.royalSlider {
+  width: 100%;
+  height: 400px;
+}
+.logoMain{
+	width:300px;
+}
+.socialIcons{
+	font-size: 1.5em;
+}
+.bar_group{
+	padding-left:25px;
+}
+
+.container-fluid{
+	margin:0;
+	padding:0;
+}
+
+.siteHeader{
+	height:150px;
+/* 	line-height: 150px; */
+}
+
+.header1Stripe{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:60px;
+	line-height: 60px;
+	background-color:black;
+	color:white;
+/* 	font-size:1.2em; */
+}
+
+h2{
+	font-family:'bankgothic_lt_btlight';
+}
+
+.network-nav{
+	line-height: 150px;
+	margin:0;
+	padding:0;
+}
+.network-nav li {
+    float: right;
+    font-size: large;
+	font-family:'bankgothic_lt_btlight';
+	color:black;
+	font-size: 1.75em;
+}
+.network-nav a{
+	text-decoration: none;
+	color:black;
+}
+.network-nav a:hover{
+	color:gold;
+}
+.header_logo{
+	
+}
+.petta_footer{
+	background-color:#dba53c;
+	height:200px;
+	color:white;
+}
+
+.mainText{
+	margin:25px;
+	padding:10px;
+	color:#797979;
+	
+}

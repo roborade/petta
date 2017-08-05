@@ -4,6 +4,12 @@ jQuery(document).ready(function($) {
             // as an example, enable keyboard arrows nav
             keyboardNavEnabled: true,
             imageScaleMode: 'fill',
-            controlNavigation: 'none'
+            controlNavigation: 'none',
+            autoPlay: {
+	    		// autoplay options go gere
+	    		enabled: true,
+	    		pauseOnHover: true
+	    	}
         });  
     });
+
