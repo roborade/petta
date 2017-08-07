@@ -15,7 +15,7 @@
 
 				<div class = "pull-right socialIcons">
 					<span class = "bar_group">905-555-9990</span>
-					<span class = "bar_group">dino@email.com</span>
+					<span class = "bar_group">dino@pettaconstruction.com</span>
 					<span class = "bar_group"><i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i></span>
 					<span class = "bar_group"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></span>
 				</div>
@@ -34,12 +34,13 @@
 		<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class = "siteHeader">
 				<img class = "img-responsive logoMain pull-left" src = "{{ asset('images/pettaClogoWithLine.png') }}"/>
-					
+				
 				
 				<ul class="nav network-nav">
 					  
 					  <li role="presentation"><a href="#">Services</a></li>					  
 					  <li role="presentation"><a href="#">Gallery</a></li>
+{# 					  <li role="presentation"><a href="#">Current Projects</a></li>					   #}
 					  <li role="presentation"><a href="#">Testimonials</a></li>
 					  <li role="presentation"><a href="#">Contact</a></li>
 					  <li role="presentation" class="active"><a href="#">Home</a></li>
@@ -48,14 +49,22 @@
 			</div>	
 		</div>
 	</div>
+{#
+	<div class = "row">
+		<div class = "col-md-12">
+			<div class = "text-center slogan_text">"Helping Home Owners Build Their Dream"</div>
+		</div>
+	</div>
+#}
 </div>
 <a id="showHere"></a>
 
-<div class = "container">
+<div class = "container-fluid">
 	<div class="royalSlider rsDefault">
 	    <!-- simple image slide -->
-	    <div>
+	    <div style = "position:relative;">
 		    <img class="rsImg" src="{{asset('images/gallery/479.jpg')}}" alt="image desc" width="200" />
+		    <div class = "heroText"><span class = "heroTextEmp1">Helping Home Owners Build Their</span> <span class = "heroTexEmp">Dream</span></div>
 		</div>
 		<div>
 		    <img class="rsImg" src="{{asset('images/gallery/317.jpg')}}" alt="image desc" width="200" />
@@ -117,18 +126,136 @@
 				<p>If your needs involve Commercial or Light Industrial building construction or renovation, Petta Construction will complete your project with same attention to quality, fit and finish as our residential projects.</p>
 	
 				<p>Please click on either the Residential or Commercial link to the right to read more about our work, then give us a call or send us an email to arrange for your free, no obligation consultation.</p>
-
-</div>
+		
+				</div>
+			
+			<h2>Find us on Social Media</h2>
+			<p style = "margin-left:30px">
+					<span class = "bar_group"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span>
+					<span class = "bar_group"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></span>
+			</p>
 		</div>
+
 		
 		<div class = "col-md-6">
-			<h2>Galleries</h2>
 			<h2>Testimonials</h2>
+				<div class = "row">
+					<div class = "col-md-12">
+						<p class = "mainText">
+						See what our clients have to say about our work on <a href = "https://trustedpros.ca/company/petta-construction">TrustedPros.ca</a>.
+{# 							We stand by our work and know our customers' testimonials are your best resource.  Please find our reviews on TrustedPros.ca. #}
+						</p>
+						<div class = "tprosLogo"><a href = "https://trustedpros.ca/company/petta-construction"><img class = "img-responsive" src = "{{ asset('images/trustedProsLogo.png') }}" width="50%"/></a></div>
+					</div>
+				</div>
+			
+			<h2>Galleries</h2>
+				<div class = "row">
+				<h3 class = "gallery">Bathrooms</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Kitchens</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Basements</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+
 		</div>
 	</div>
 </div>
 
-  
+<div class = "container">
+	<div class = "row">
+	<div class = "col-md-6">
+			
+			<h2>Commerical Galleries</h2>
+				<div class = "row">
+{# 				<h3 class = "gallery">Bathrooms</h3> #}
+				<h3 class = "gallery">New Construction</h3>
+
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Renovation</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Misc.</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+
+		</div>
+			<div class = "col-md-6">
+			
+			<h2>Residential Galleries</h2>
+				<div class = "row">
+				<h3 class = "gallery">Bathrooms</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Kitchens</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+				<div class = "row">
+				<h3 class = "gallery">Basements</h3>
+					<div class = "col-md-12 col-xs-12">
+						<img src = "{{asset('images/gallery/317.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/263.jpg')}}" style = "height:140px; width:140px;"/>
+						<img src = "{{asset('images/gallery/300.jpg')}}" style = "height:140px; width:140px;"/>
+					</div>
+					
+				</div>
+
+		</div>
+	
+	
+	</div>
+</div>
+
+<div class = "spacer"></div> 
   
 
 <footer>
@@ -136,8 +263,19 @@
 		<div class = "petta_footer">
 			<div class = "container">
 				<div class = "row">
-					<div class = "col-md-12">
-						<p>Contact Text</p>
+					<div class = "col-md-8">
+						<h3>Petta Construction</h3>
+						<div class = "footerAddress">
+							<p>
+							30 Lasalle Court<br>
+							Stoney Creek, ON L8J 3X6<br>
+							<i class="fa fa-phone fa-1x" aria-hidden="true"></i> &nbsp; (289) 965-8512 <br>
+							<i class="fa fa-envelope fa-1x" aria-hidden="true"></i> &nbsp; <a class = "bottom" 	href = "mailto:dino@pettaconstruction.com">dino@pettaconstruction.com</a> <br>
+							</p>
+						</div>
+					</div>
+					<div class = "col-md-4">
+						<img class = "img-responsive pull-right" src = "{{ asset('images/pettaClogoWhite.png') }}"></img>
 					</div>
 				</div>
 			</div>

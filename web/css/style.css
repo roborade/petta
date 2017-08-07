@@ -8,7 +8,7 @@
 }
 .royalSlider {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .logoMain{
 	width:300px;
@@ -45,6 +45,11 @@ h2{
 	font-family:'bankgothic_lt_btlight';
 }
 
+h3{
+	font-family:'bankgothic_lt_btlight';
+	margin-left:25px;
+}
+
 .network-nav{
 	line-height: 150px;
 	margin:0;
@@ -68,7 +73,8 @@ h2{
 	
 }
 .petta_footer{
-	background-color:#dba53c;
+/* 	background-color:#dba53c; */
+	background-color:black;
 	height:200px;
 	color:white;
 }
@@ -78,4 +84,46 @@ h2{
 	padding:10px;
 	color:#797979;
 	
+}
+
+.slogan_text{
+	color:#dba53c;
+	line-height: 30px;
+	height:30px;
+	font-size: 25px;
+	margin:30px;
+}
+
+.spacer{
+	height:100px;
+}
+.footerAddress{
+	margin-left:25px;
+}
+
+.tprosLogo{
+	margin-left:25px;
+	margin-bottom:20px;
+}
+
+a.bottom{
+	color:white;
+}
+.heroText{
+	left: 0;
+    position:absolute;
+/*     text-align:center; */
+	top: 325px;
+    width: 100%;
+    font-size: 45px;
+/* 	font-weight: 100; */
+    line-height: 40px;
+    margin-left:25px;
+}
+
+.heroTextEmp1{
+	font-weight:300;
+}
+.heroTexEmp{
+	font-weight:500;
 }
