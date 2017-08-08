@@ -24,12 +24,26 @@
 		</div>
 	</div>
 </div>
+<div id = "nav_contact" class = "header1Stripe header navbar-fixed-top" style = "display:none;" >
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class = "img-responsive pull-left"><img src = "{{ asset('images/pettaClogoWhite.png') }}"/ width = "100px"></div>
+				<div class = "pull-right socialIcons">
+					<span class = "bar_group">905-555-9990</span>
+					<span class = "bar_group">dino@pettaconstruction.com</span>
+					<span class = "bar_group"><i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i></span>
+					<span class = "bar_group"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></span>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
 
+
+{#
 <div class = "container">
-	
-		
-	
-	
 	<div class = "row">
 		<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class = "siteHeader">
@@ -40,7 +54,6 @@
 					  
 					  <li role="presentation"><a href="#">Services</a></li>					  
 					  <li role="presentation"><a href="#">Gallery</a></li>
-{# 					  <li role="presentation"><a href="#">Current Projects</a></li>					   #}
 					  <li role="presentation"><a href="#">Testimonials</a></li>
 					  <li role="presentation"><a href="#">Contact</a></li>
 					  <li role="presentation" class="active"><a href="#">Home</a></li>
@@ -49,14 +62,17 @@
 			</div>	
 		</div>
 	</div>
-{#
+
 	<div class = "row">
 		<div class = "col-md-12">
 			<div class = "text-center slogan_text">"Helping Home Owners Build Their Dream"</div>
 		</div>
 	</div>
-#}
+
 </div>
+#}
+{% include 'nav.html.twig' %}
+
 <a id="showHere"></a>
 
 <div class = "container-fluid">
@@ -128,12 +144,16 @@
 				<p>Please click on either the Residential or Commercial link to the right to read more about our work, then give us a call or send us an email to arrange for your free, no obligation consultation.</p>
 		
 				</div>
+			{{ dump(insta) }}
+			<h2>Current Project Feed</h2>
+			{% for posts in insta %}
+			<div class = "img-responsive"><img src="{{ posts }}"/></div>	
+			{% endfor %}
+{# 			<p style = "margin-left:30px"> #}
+{# 					<span class = "bar_group"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span> #}
+{# 					<span class = "bar_group"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></span> #}
+{# 			</p> #}
 			
-			<h2>Find us on Social Media</h2>
-			<p style = "margin-left:30px">
-					<span class = "bar_group"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span>
-					<span class = "bar_group"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></span>
-			</p>
 		</div>
 
 		

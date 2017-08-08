@@ -10,6 +10,26 @@ jQuery(document).ready(function($) {
 	    		enabled: true,
 	    		pauseOnHover: true
 	    	}
-        });  
+        });
+        
+//         $(".navbar").hide();
+
+		// fade in .navbar
+	    $(function () {
+	        $(window).scroll(function () {
+	
+	                 // set distance user needs to scroll before we start fadeIn
+	            if ($(this).scrollTop() > 150) {
+	                $('#nav_contact').fadeIn();
+	            } else {
+	                $('#nav_contact').fadeOut();
+	            }
+	        });
+	    });  
     });
 
+$( document ).ready(function() {
+// 	record_visit_to_db(0, 'visit');
+// hide .navbar first
+    
+});
