@@ -6,5 +6,5 @@ blog_post:
     prefix:   /post
 
 blog_homepage:
-    path:     /tools
+    path:     /a
     defaults: { _controller: BlogBundle:Default:index }

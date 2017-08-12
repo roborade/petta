@@ -9,7 +9,8 @@ photo_show:
     methods:  GET
 
 photo_new:
-    path:     /{postid}/new
+#     path:     /{postid}/new
+    path:     /new
     defaults: { _controller: "BlogBundle:Photo:new" }
     methods:  [GET, POST]
 

@@ -33,7 +33,7 @@ class PhotoController extends Controller
      */
     public function newAction(Request $request)
     {
-	    $postid = $request->get('postid');
+// 	    $postid = $request->get('postid');
 	    
         $photo = new Photo();
         $form = $this->createForm('BlogBundle\Form\PhotoType', $photo);

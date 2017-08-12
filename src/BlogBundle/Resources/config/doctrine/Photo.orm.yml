@@ -2,15 +2,15 @@ BlogBundle\Entity\Photo:
     type: entity
     table: null
     repositoryClass: BlogBundle\Repository\PhotoRepository
-    manyToOne:
-        post:
-            targetEntity: Post
-            inversedBy: photo
-            joinColumn:
-                name: post_id
-                referenceColumnName: id
-                onDelete: CASCADE
-                nullable: FALSE
+#     manyToOne:
+#         post:
+#             targetEntity: Post
+#             inversedBy: photo
+#             joinColumn:
+#                 name: post_id
+#                 referenceColumnName: id
+#                 onDelete: CASCADE
+#                 nullable: FALSE
                 
     id:
         id:
