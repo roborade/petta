@@ -1,0 +1,10 @@
+blog_photo:
+    resource: "@BlogBundle/Resources/config/routing/photo.yml"
+    prefix:   /photo
+blog_post:
+    resource: "@BlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+blog_homepage:
+    path:     /tools
+    defaults: { _controller: BlogBundle:Default:index }

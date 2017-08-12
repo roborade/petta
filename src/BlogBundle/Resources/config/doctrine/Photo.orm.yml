@@ -1,0 +1,33 @@
+BlogBundle\Entity\Photo:
+    type: entity
+    table: null
+    repositoryClass: BlogBundle\Repository\PhotoRepository
+    manyToOne:
+        post:
+            targetEntity: Post
+            inversedBy: photo
+            joinColumn:
+                name: post_id
+                referenceColumnName: id
+                onDelete: CASCADE
+                nullable: FALSE
+                
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        file:
+            type: string
+            length: 255
+        fileDesc:
+            type: string
+            length: 255
+            nullable: true
+            column: file_desc
+        dateAdded:
+            type: datetime
+            column: date_added
+    lifecycleCallbacks: {  }

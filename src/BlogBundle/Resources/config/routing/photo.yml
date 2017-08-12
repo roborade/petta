@@ -1,0 +1,24 @@
+photo_index:
+    path:     /
+    defaults: { _controller: "BlogBundle:Photo:index" }
+    methods:  GET
+
+photo_show:
+    path:     /{id}/show
+    defaults: { _controller: "BlogBundle:Photo:show" }
+    methods:  GET
+
+photo_new:
+    path:     /{postid}/new
+    defaults: { _controller: "BlogBundle:Photo:new" }
+    methods:  [GET, POST]
+
+photo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BlogBundle:Photo:edit" }
+    methods:  [GET, POST]
+
+photo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BlogBundle:Photo:delete" }
+    methods:  DELETE

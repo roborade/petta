@@ -1,0 +1,48 @@
+BlogBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: BlogBundle\Repository\PostRepository
+    oneToMany:
+        photo:
+            targetEntity: Photo
+            mappedBy: post
+            fetch: EAGER
+            joinColumn:
+                onDelete: CASCADE
+
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        body:
+            type: string
+            length: '5000'
+        tags:
+            type: array
+            nullable: true
+        category:
+            type: string
+            length: 255
+        createdBy:
+            type: string
+            length: 255
+            column: created_by
+        dateCreated:
+            type: datetime
+            column: date_created
+        dateModified:
+            type: datetime
+            column: date_modified
+            nullable: true
+        publish:
+            type: integer
+            options:
+                default: 0
+      
+    lifecycleCallbacks: {  }

@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class = "container-fluid container-fluid-col">
+	<div class = "title">
+		<div class = "titleText"><span class = "esp">esp</span><span>ra.de</span></div>
+	</div>	
+</div>
+<div class = "container-fluid">
+	<div class = "row">
+		<div class = "col-md-2 col-lg-3">
+		
+{#
+			<div class = "intro">
+				<p>A simple site to host images.</p>
+			</div>
+#}
+		</div>
+		<div class = "col-xs-12 col-sm-12 col-md-8 col-lg-6">
+		
+
+			{% for post in posts %}
+			<div class = "postContainer">			
+				
+				<div class = "postDate">{% if post.dateCreated %}{{ post.dateCreated|date('j.F.Y') }}{% endif %} {% if post.category %}<span class = 'pipe'>|</span> {{ post.category }}{% endif %}</div>
+				
+				{% if post.photo[0] is defined %}
+					<div class = "header_1" style = "overflow:hidden;">
+						<div class = "header_2"></div>
+						<div class = "postTitleImage">{{ post.title }}</div> 
+						<img class = "headerImage img-responsive" src = {{ asset('uploads/images/' ~ post.photo[0].file) }} />
+					</div>
+				{% endif %}	
+				
+				<div class = "tagGroup">
+					{% for tagg in post.tags %}
+						<span><a class = "tagLink" href = "">{{tagg}}</a></span>
+					{% endfor %}
+				</div>
+									
+{# 					<div class = "postTitle">{{ post.title }}</div>					 #}
+					
+					<div class = "row">
+						<div class = "col-md-8">
+							<div class = "postBody"><p>{{ post.body|nl2br }}</p></div>
+						</div>
+					</div>
+
+				<div class = "imageGroup">
+					{% for image in post.photo %}
+						
+						<a href="{{ asset('uploads/images/' ~ image.file) }}" data-lightbox="{{post.id}}" data-title="{{image.fileDesc}}">
+								<img class = " image" src = "{{ asset('uploads/thumbs/' ~ image.file) }}"/>
+						</a>
+						
+						
+					{% endfor %}
+				</div>
+			
+					
+			<div class = "bottomLine"></div>
+{#
+				<div class = "tagGroup">
+					{% for tagg in post.tags %}
+						<span><a class = "tagLink" href = "">{{tagg}}</a></span>
+					{% endfor %}
+				</div>
+#}
+			</div>
+			{% endfor %}
+			
+		
+		</div>
+		<div class = "col-md-2 col-lg-3"></div>
+	</div>
+</div>
+<footer></footer>
+{% endblock %}

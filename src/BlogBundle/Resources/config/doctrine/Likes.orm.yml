@@ -1,0 +1,27 @@
+BlogBundle\Entity\Likes:
+    type: entity
+    table: null
+    repositoryClass: BlogBundle\Repository\LikesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        liked:
+            type: integer
+        ipAddress:
+            type: string
+            length: 255
+            column: ip_address
+        browser:
+            type: string
+            length: 255
+        os:
+            type: string
+            length: 255
+        dateAdded:
+            type: datetime
+            column: date_added
+    lifecycleCallbacks: {  }

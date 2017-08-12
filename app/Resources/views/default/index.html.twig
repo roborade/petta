@@ -131,6 +131,7 @@
 			<h2>Welcome to Petta Construction</h2>
 			
 				<div class = "mainText">
+				<p><em>-needs revision-</em></p>
 				<p>Welcome to Petta Construction, one of Hamilton's leading residential and commercial contractors.</p>
 	
 				<p>For more than 25 years Petta Construction has been building, renovating and providing high quality custom contracting services in Hamilton, Ancaster, Stoney Creek and Dundas.</p>
@@ -144,16 +145,11 @@
 				<p>Please click on either the Residential or Commercial link to the right to read more about our work, then give us a call or send us an email to arrange for your free, no obligation consultation.</p>
 		
 				</div>
-			{{ dump(insta) }}
-			<h2>Current Project Feed</h2>
+{# 			{{ dump(insta) }} #}
+			<h2><span class = "bar_group"><i class="fa fa-instagram" aria-hidden="true"></i></span> Project Feed</h2>
 			{% for posts in insta %}
 			<div class = "img-responsive"><img src="{{ posts }}"/></div>	
 			{% endfor %}
-{# 			<p style = "margin-left:30px"> #}
-{# 					<span class = "bar_group"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span> #}
-{# 					<span class = "bar_group"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></span> #}
-{# 			</p> #}
-			
 		</div>
 
 		
@@ -290,7 +286,7 @@
 							30 Lasalle Court<br>
 							Stoney Creek, ON L8J 3X6<br>
 							<i class="fa fa-phone fa-1x" aria-hidden="true"></i> &nbsp; (289) 965-8512 <br>
-							<i class="fa fa-envelope fa-1x" aria-hidden="true"></i> &nbsp; <a class = "bottom" 	href = "mailto:dino@pettaconstruction.com">dino@pettaconstruction.com</a> <br>
+							<i class="fa fa-envelope fa-1x" aria-hidden="true"></i> &nbsp; <a class = "bottom img-responsive" 	href = "mailto:dino@pettaconstruction.com">dino@pettaconstruction.com</a> <br>
 							</p>
 						</div>
 					</div>
